@@ -1,0 +1,5 @@
+CLASS zbp_i_header_heras DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_header_heras.
+ENDCLASS.
+
+CLASS zbp_i_header_heras IMPLEMENTATION.
+ENDCLASS.
