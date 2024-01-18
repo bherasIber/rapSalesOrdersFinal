@@ -24,7 +24,7 @@ annotate entity Z_C_ITEMS_HERAS with
   Name;
 
   @UI: {
-  lineItem: [{ position: 20, importance: #LOW }],
+  lineItem: [{ position: 20, importance: #HIGH }],
   identification: [ { position: 20, label: 'Description'  } ] }
   Description;
 
