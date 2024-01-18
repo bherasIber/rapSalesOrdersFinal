@@ -1,22 +1,4 @@
-projection;
-//strict;
-
-define behavior for Z_C_HEADER_U2985 alias Header
+unmanaged;
+define behavior for Z_C_HEADER_U2985
 {
-
-  //field ( readonly ) Id;
-
-  use create;
-  use update;
-  use delete;
-
-  use association _Items { create; }
-}
-
-define behavior for Z_C_ITEMS_U2985 alias Items
-{
-  use update;
-  use delete;
-
-  use association _Header;
 }

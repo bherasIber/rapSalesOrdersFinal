@@ -1,8 +1,8 @@
 managed implementation in class zbp_i_header_u2985 unique;
 //strict ( 1 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
 
-define behavior for ZI_HEADER_U2985 alias Header
-persistent table ztheader_u2985
+define behavior for ZI_HEADER_HERAS alias Header
+persistent table ztheader_heras
 lock master
 authorization master ( instance )
 etag master LastChangedAt
@@ -16,7 +16,7 @@ etag master LastChangedAt
   //field ( features : instance ) id;
 
   association _Items { create ( features : instance ); }
-  mapping for ztheader_u2985
+  mapping for ztheader_heras
     {
       Id            = id;
       Email         = email;
@@ -34,8 +34,8 @@ etag master LastChangedAt
     }
  }
 
-define behavior for ZI_ITEMS_U2985 alias Items
-persistent table zitems_u2985
+define behavior for ZI_ITEMS_heras alias Items
+persistent table zitems_heras
 lock dependent by _Header
 authorization dependent by _Header
 etag master LastChangedAt
@@ -46,7 +46,7 @@ etag master LastChangedAt
   field ( readonly ) id;
 
   association _Header;
-  mapping for zitems_u2985
+  mapping for zitems_heras
     {
       Id               = id;
       Name             = name;

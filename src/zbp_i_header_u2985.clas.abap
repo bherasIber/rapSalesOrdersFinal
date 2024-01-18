@@ -1,5 +1,13 @@
-CLASS zbp_i_header_u2985 DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_header_u2985.
+class ZBP_I_HEADER_U2985 definition
+  public
+  create private .
+
+public section.
+protected section.
+private section.
 ENDCLASS.
 
-CLASS zbp_i_header_u2985 IMPLEMENTATION.
+
+
+CLASS ZBP_I_HEADER_U2985 IMPLEMENTATION.
 ENDCLASS.
